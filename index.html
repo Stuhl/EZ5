@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="ROT13 algorithm" />
+    <meta name="keywords" content="encryptor, decryptor, ROT13, decode, encode"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Kaan 'Kazihiro' Aksu" />
+
+    <title>EZ5</title>
+
+    <script defer src="./logic.js"></script>
+
+    <link rel="stylesheet" href="./style.css"/>
+
+  </head>
+
+  <body>
+    <div id="grid">
+      <div>
+        <h1>Encryptor/Decryptor</h1>
+        <p>A encryptor/decryptor web app with a custom ROT13 algorithm (totally safe to use for your db encryption)</p>
+      </div>
+      <div class="cryption-grid" id="encryptor-container">
+        <h2 class="header">ENCRYPT</h2>
+        <textarea placeholder="Your message..." class="textarea" id="encryptor-textarea" cols="100" rows="10"></textarea>
+        <button id="encrypted-button" class="button">ENCRYPT</button>
+        <p id="encrypted-message"></p>
+      </div>
+      <div class="cryption-grid" id="decryptor-container">
+        <h2 class="header">DECRYPT</h2>
+        <textarea id="decryptor-textarea" placeholder="your secret message..." class="textarea" cols="100" rows="10"></textarea>
+        <button id="decrypt-button" class="button">DECRYPT</button>
+        <p id="decrypted-message"></p>
+      </div>
+    </div>
+  </body>
+</html>
